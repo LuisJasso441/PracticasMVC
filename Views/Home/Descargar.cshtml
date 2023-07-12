@@ -1,0 +1,137 @@
+﻿
+@{
+    ViewData["Title"] = "Descargar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html lang="en">
+
+<head>
+    <style>
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+            font-size: 80%;
+        }
+
+        tr:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            height: 300px;
+            margin: 1em;
+            text-align: center;
+        }
+
+        .card h2 {
+                font-size: 1.5em;
+                margin: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>Descargas</h1>
+        <article>
+            <h1>Programas que SAP distribuye</h1>
+            <article>
+                Explore nuestra completa cartera para encontrar las
+                soluciones que necesita para gestionar sus procesos de negocio y su empresa de forma más eficiente.
+            </article>
+        </article>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <th><img src="Imagenes/SAP.png" alt="Aqui va una foto" width="70px" height="40px"></th>
+                <th><img src="Imagenes/SAP_BO.png" alt="Aqui va una foto" width="150px" height="40px"></th>
+                <th><img src="Imagenes/Crystal_Reports.png" alt="Aqui va una foto" width="150px" height="70px"></th>
+            </tr>
+            <tr>
+                <td>SAP</td>
+                <td>SAP Business One</td>
+                <td>Crystal Reports</td>
+            </tr>
+            <tr>
+                <td>
+                    SAP SE es una empresa multinacional alemana dedicada al diseño de productos informáticos de gestión empresarial,
+                    tanto para empresas como para organizaciones y organismos públicos.
+                </td>
+                <td>
+                    SAP Business One es un software de gestión empresarial diseñado para pequeñas y medianas empresas, comercializado por la empresa alemana SAP SE.
+                    Como solución ERP, su objetivo es automatizar funciones comerciales clave en finanzas, operaciones y recursos humanos.
+                </td>
+                <td>
+                    Crystal Reports es una aplicación de inteligencia empresarial utilizada para diseñar y generar informes desde una amplia
+                    gama de fuentes de datos. Varias aplicaciones, como Microsoft Visual Studio,
+                    incluyen una versión OEM de Crystal Reports como una herramienta de propósito general para informes/reportes.
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://www.sap.com/latinamerica/products/technology-platform/trial.html" target="_blank">Descargar SAP</a></td>
+                <td><a href="https://www.sap.com/uk/products/erp/business-one.html" target="_blank">Descargar SAP Bussiness One</a></td>
+                <td><a href="https://www.sap.com/products/technology-platform/crystal-reports.html" target="_blank">Descargar Crystal Reports</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="contenedor">
+
+        <div class="card">
+            <img src="Imagenes/SAP_80.png" alt="SAP Logo">
+            <h2>SAP</h2>
+            <p></p>
+            <a href="https://www.sap.com/latinamerica/products/technology-platform/trial.html" target="_blank">Descargar SAP</a>
+        </div>
+        <div class="card">
+            <img src="Imagenes/SAP_BO_80.png" alt="SAP_BO Logo">
+            <h2>SAP Business One</h2>
+            <p></p>
+            <a href="https://www.sap.com/uk/products/erp/business-one.html" target="_blank">Descargar SAP Bussiness One</a>
+        </div>
+        <div class="card">
+            <img src="Imagenes/Crystal_Reports_80.png" alt="Crystal_Reports Logo">
+            <h2>SAP Crystal Reports</h2>
+            <p></p>
+            <a href="https://www.sap.com/products/technology-platform/crystal-reports.html" target="_blank">Descargar Crystal Reports</a>
+        </div>
+    </div>
+
+</body>
+</html>
