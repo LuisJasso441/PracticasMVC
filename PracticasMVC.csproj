@@ -8,9 +8,13 @@
 
   <ItemGroup>
     <Compile Remove="estilos\**" />
+    <Compile Remove="Imagenes\**" />
     <Content Remove="estilos\**" />
+    <Content Remove="Imagenes\**" />
     <EmbeddedResource Remove="estilos\**" />
+    <EmbeddedResource Remove="Imagenes\**" />
     <None Remove="estilos\**" />
+    <None Remove="Imagenes\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,10 +29,6 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.14" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Imagenes\" />
   </ItemGroup>
 
 </Project>
